@@ -25,26 +25,61 @@
 
         <header>
             <figure class="logo">
-                <img src="./Media/hat.png" alt="">
+                <img id="hat" src="./Media/hat.png" alt="">
                 <img id="text" src="./Media/text-logo.png" alt="">
 
 
             </figure>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="https://education.trendzza.com/about/">About</a></li>
-                    <li><a href="#page5">Courses</a></li>
-                    <li><a href="https://education.trendzza.com/contact-us/">Online Registration</a></li>
-                    <li><a href="https://education.trendzza.com/corporate-training/">Corporate Training</a></li>
-                    <li><a href="https://trendzza.com/">Blogs</a></li>
-
-
-
-
-
+                    <li><a href="/"><i class="ri-home-2-line"></i> Home</a></li>
+                    <li><a href="https://education.trendzza.com/about/"><i class="ri-user-3-line"></i> About</a></li>
+                    <li><a href="#page5"><i class="ri-macbook-line"></i> Courses</a></li>
+                    <li><a href="https://education.trendzza.com/contact-us/"><i class="ri-sticky-note-line"></i> Online Registration</a></li>
+                    <li><a href="https://education.trendzza.com/corporate-training/"><i class="ri-presentation-fill"></i> Corporate Training</a></li>
+                    <li><a href="https://trendzza.com/"><i class="ri-blogger-line"></i> Blogs</a></li>
                 </ul>
             </nav>
+
+            <div class="menu-btn">
+                <i onclick="showmenu()" id="ham" class="ri-menu-line"></i>
+                <i onclick="closemenu()" id="close" class="ri-close-fill"></i>
+            </div>
+
+            <div class="mobile-nav">
+               
+                <ul>
+                    <li><a href="/"><i class="ri-home-2-line"></i> Home</a></li>
+                    <li><a href="https://education.trendzza.com/about/"><i class="ri-user-3-line"></i> About</a></li>
+                    <li><a href="#page5"><i class="ri-macbook-line"></i> Courses</a></li>
+                    <li><a href="https://education.trendzza.com/contact-us/"><i class="ri-sticky-note-line"></i> Online Registration</a></li>
+                    <li><a href="https://education.trendzza.com/corporate-training/"><i class="ri-presentation-fill"></i> Corporate Training</a></li>
+                    <li><a href="https://trendzza.com/"><i class="ri-blogger-line"></i> Blogs</a></li>
+                    
+                </ul>
+            </div>
+            <script>
+                function showmenu(){
+                    var menu=document.querySelector(".mobile-nav");
+                    var menub=document.querySelector("#ham");
+                    var menuc=document.querySelector("#close");
+
+                    menu.style.display="flex";
+                    menub.style.display="none";
+                    menuc.style.display="flex";
+
+
+                }
+                function closemenu(){
+                    var menu=document.querySelector(".mobile-nav");
+                    var menub=document.querySelector("#ham");
+                    var menuc=document.querySelector("#close");
+                    menuc.style.display="none";
+                    menub.style.display="flex";
+                    menu.style.display="none";
+
+                }
+            </script>
         </header>
 
 
