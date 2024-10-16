@@ -391,6 +391,20 @@ header nav{
     header{
         background-color: #000000; 
     }
+    .carousel .list .item .image img{
+
+        object-fit: contain;
+
+    }
+
+    .carousel .list .item .main-content .content .price{
+
+        width:600px;
+
+    }
+
+    }
+
 }
 
 
